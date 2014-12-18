@@ -67,7 +67,7 @@ body {
 	height: 30vw;
 	z-index: 5;
 	opacity: 0;
-		-webkit-animation-delay: 1s;
+		-webkit-animation-delay: 1.5s;
 		-webkit-animation-fill-mode: forwards;
 
 	-webkit-animation-duration: 10s;
@@ -85,7 +85,7 @@ body {
 	height: 30vw;
 	z-index: 5;
 	opacity: 0;
-		-webkit-animation-delay: 1s;
+		-webkit-animation-delay: 1.5s;
 		-webkit-animation-fill-mode: forwards;
 
 	-webkit-animation-duration: 10s;
@@ -170,7 +170,7 @@ body {
 	left:68vw;
 	opacity: 0;
 	-webkit-animation-fill-mode: forwards;
-	-webkit-animation-delay: .5s;
+	-webkit-animation-delay: .8s;
 	-webkit-animation-duration: 1s;
     -webkit-animation-name: bounceInRight;
 	-webkit-animation-iteration-count: 1;
