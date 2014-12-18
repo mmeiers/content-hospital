@@ -66,6 +66,10 @@ body {
     width: 60vw;
 	height: 30vw;
 	z-index: 5;
+	opacity: 0;
+		-webkit-animation-delay: 1s;
+		-webkit-animation-fill-mode: forwards;
+
 	-webkit-animation-duration: 10s;
 	-webkit-animation-iteration-count: infinite;
     -webkit-animation-name: bounceInRightText1;
@@ -80,6 +84,10 @@ body {
     width: 60vw;
 	height: 30vw;
 	z-index: 5;
+	opacity: 0;
+		-webkit-animation-delay: 1s;
+		-webkit-animation-fill-mode: forwards;
+
 	-webkit-animation-duration: 10s;
 	-webkit-animation-iteration-count: infinite;
     -webkit-animation-name: bounceInRightText2;
@@ -93,7 +101,6 @@ body {
 	font-weight: 700;
 	letter-spacing: .3vw;
 	text-transform: uppercase;
-
 }
 
 .sub-text {
