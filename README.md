@@ -39,10 +39,10 @@ Part of the background image is blurred and it can be modified within css/style-
 ####Changing The Text Content
 The text content is displayed through the use of the google-sheets web component. The example spreadsheet is located at https://docs.google.com/a/risedisplay.com/spreadsheets/d/1Wj-PV0YIi4I0qZs-HW-WDTVUrz6RP_GiVshndQkRD-Y/edit#gid=0
 
-You can use your own public spreadsheet by locating the following code in the events.html file:
+You can use your own public spreadsheet by locating the following code in the index.html file:
 
 ```<google-sheets id="sheet" 
-               key="1WwSkJbyIH4EgVDni9eI65zK95MBv0R5c6JSVXsGEPiE"
+               key="1Wj-PV0YIi4I0qZs-HW-WDTVUrz6RP_GiVshndQkRD-Y"
                gid="0"
                rows="{{rows}}"
                published>
