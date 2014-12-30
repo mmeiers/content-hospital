@@ -14,21 +14,47 @@ body {
 	z-index: 99;
 }
 
-/*ANIMATED ELEMENTS*/
-/* Background */
-.content img {
-	-webkit-animation-duration: 40s;
-    -webkit-animation-name: pulse;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	 /* Hey browser, use your GPU */
-   	-webkit-transform: translate3d(0, 0, 0);
-	height:100vh;
-	width:100vw;
+/* LOGO */
+#logo-container{
+	position:absolute;
+	left:5vw;
+	top:5vh;
+	z-index: 6;
+	margin:0;
 }
 
-/* Quote Content */
-#text-container1 {
+#logo-container img{
+	width:30vw;
+	-webkit-animation: flipInX 1s ease 1;
+	-webkit-animation-fill-mode: forwards;
+	 /* Hey browser, use your GPU */
+   	-webkit-transform: translate3d(0, 0, 0);
+}
+
+/*TEXT ELEMENTS*/
+.date, .event{
+	font-size: 5.8vw;
+	line-height: 7vw;
+	font-weight: 700;
+	letter-spacing: .3vw;
+	text-transform: uppercase;
+}
+
+.desc {
+	position: relative;
+	font-size: 4vw;
+	line-height: 4.2vw;
+	top:2vh;
+	font-weight:300;
+	letter-spacing: .5vw;
+}
+
+.event {
+	color:#70bcc6;
+}
+
+/*Bounce Animation Control*/
+.slides:nth-of-type(1n) {
 	position: absolute;
 	top: 20vh;
     left: 5vw;
@@ -38,12 +64,12 @@ body {
 	opacity: 0;
 	-webkit-animation: bounceInRightText 20s 1.5s ease infinite;
 	-webkit-animation-fill-mode: forwards;
-	
+
 	 /* Hey browser, use your GPU */
    	-webkit-transform: translate3d(0, 0, 0);
 }
 
-#text-container2 {
+.slides:nth-of-type(2n) {
 	position: absolute;
 	top: 20vh;
     left: 5vw;
@@ -58,23 +84,13 @@ body {
    	-webkit-transform: translate3d(0, 0, 0);
 }
 
-/* Logo */
-#logo-container{
-	position:absolute;
-	left:5vw;
-	top:5vh;
-	z-index: 6;
-}
+@media only screen and (max-width: 1280px) {
+	    .slides {
+			margin-top: 5vh;
+	    }
+	}
 
-#logo-container img{
-	width:30vw;
-	-webkit-animation: flipInX 1s ease 1;
-	-webkit-animation-fill-mode: forwards;
-	 /* Hey browser, use your GPU */
-   	-webkit-transform: translate3d(0, 0, 0);
-}
-
-/* Doctor */
+/* DOCTOR IMAGES */
 #doctor-container1{
 	position:absolute;
 	left:0vw;
@@ -113,32 +129,7 @@ body {
    	-webkit-transform: translate3d(0, 0, 0);
 }
 
-
-/*TEXT ELEMENTS*/
-.header-text {
-	font-size: 5.8vw;
-	line-height: 7vw;
-	font-weight: 700;
-	letter-spacing: .3vw;
-	text-transform: uppercase;
-}
-
-.sub-text {
-	position: relative;
-	font-size: 4vw;
-	line-height: 4.2vw;
-	top:2vh;
-	width:100%;
-	font-weight:300;
-	letter-spacing: .5vw;
-}
-
-.blue {
-	color:#70bcc6;
-}
-
 /*BACKGROUND ELEMENTS*/
-
 .container {
 	position: absolute;
 	width: 100%;
@@ -181,13 +172,25 @@ body {
 	z-index: 4;
 	background-color: rgba(30,30,30,0.5);
 }
+
+/* Background Image*/
+.content img {
+	-webkit-animation-duration: 40s;
+    -webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	 /* Hey browser, use your GPU */
+   	-webkit-transform: translate3d(0, 0, 0);
+	height:100vh;
+	width:100vw;
+}
 	
 /* Footer Icons */
 #github {
 	position:absolute;
 	 width:50vw;
 	 height:4vh;
-	 left:9vw;
+	 left:10vw;
 	 top:91vh;
 	 z-index:4;
 }
@@ -204,7 +207,7 @@ body {
 	opacity:.5;
 	width:5vw;
 	height:4vh;
-	left:5vw;
+	left:6vw;
 	top:91vh;
 	z-index:5;
 	margin-left:-1vw;
