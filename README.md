@@ -36,16 +36,23 @@ Open index.html, locate the following code and modify the src url of the img tag
 
 Part of the background image is blurred and it can be modified within css/style-main.css file. Look for the classes ```.blur-box``` and ```.content-blurred```. The fluid aspect of this blurred effect is done with jquery. It can be customized within the js/blur.js and js/jquery.js files.
 
-####Changing the News & Events Text
-Open index.html, the quote content is nested within the div ```<div id="text-container1">``` & ```<div id="text-container2">``` Modify the text within the span tags to meet your needs. 
+####Changing The Text Content
+The text content is displayed through the use of the google-sheets web component. The example spreadsheet is located at https://docs.google.com/a/risedisplay.com/spreadsheets/d/1Wj-PV0YIi4I0qZs-HW-WDTVUrz6RP_GiVshndQkRD-Y/edit#gid=0
 
-The style of the text is controlled within css/style-main.css. Look for the comment called ```Quote Content```.
+You can use your own public spreadsheet by locating the following code in the events.html file:
 
-The animation attributes assigned to the text are controlled within css/style-main.css. Look for the IDs ```#text-container1``` & ```#text-container2```. The actual keyframes for the ```bounceInRightImage``` animation can be modified within css/animate.css.
+```<google-sheets id="sheet" 
+               key="1WwSkJbyIH4EgVDni9eI65zK95MBv0R5c6JSVXsGEPiE"
+               gid="0"
+               rows="{{rows}}"
+               published>
+</google-sheets>```
 
-To add more than 2 messages you will need to duplicate the container within  index.html and adapt all the animation delays within the css.
-example: ```-webkit-animation: bounceInRightImage 20s .8s ease infinite;```.
-(.8s is the dealy in this example).
+The key for your spreadsheet can be found when viewing the document online, as can be seen in the example above. 
+
+In order to view a private spreadsheet, you will need to obtain an ID from https://console.developers.google.com. This is optional if accessing a public spreadsheet, and is currently set to 'sheet' in the above example.
+
+You can then edit the text within the cells of the spreadsheet and the changes will appear in the display.
 
 ####Changing the Doctor Images
 Open index.html, locate the following code and modify the src url of the img tags to the path of your graphics. :
